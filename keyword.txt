@@ -1,0 +1,51 @@
+#######################################
+# Syntax Coloring Map For Keyboard
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+VariableInfoPrimitiveType	KEYWORD1
+VariableInfoGericType KEYWORD1
+CommandInfo KEYWORD1
+mex_type_u8_t KEYWORD1
+RawPayloadCanMex KEYWORD1
+DpsPayload KEYWORD1
+ObjName KEYWORD1
+ObjectId KEYWORD1
+CommandInfoName KEYWORD1
+CommandInfoMetadata KEYWORD1
+SendCommandPayload KEYWORD1
+AssignBoarId KEYWORD1
+BoardName KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+dps_init KEYWORD2
+
+dps_monitor_var_uint8_t KEYWORD2
+dps_monitor_var_uint16_t KEYWORD2
+dps_monitor_var_uint32_t KEYWORD2
+
+dps_monitor_var_int8_t KEYWORD2
+dps_monitor_var_int16_t KEYWORD2
+dps_monitor_var_int32_t KEYWORD2
+
+dps_monitor_var_float_t KEYWORD2
+dps_monitor_var_general KEYWORD2
+
+dps_monitor_command KEYWORD2
+dps_check_can_command_recv KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+DPS_CAN_MESSAGE_ID  LITERAL1
+CAN_PROTOCOL_MAX_PAYLOAD_SIZE LITERAL1
+CAN_MAX_SIZE_MEX LITERAL1
+NAME_MAX_SIZE  LITERAL1
+COMMAND_NAME_SIZE  LITERAL1
+BOARD_NAME_LENGTH LITERAL1
