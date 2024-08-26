@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-work_dir=".temp"
+work_dir="./Pds_slave"
 
 
 mkdir --parents $work_dir/cortex-m4/fpv4-sp-d16-hard
@@ -18,7 +18,7 @@ arm-none-eabi-ar rcs $archive_name dps_slave.o c_check_input.o c_vector.o -o
 make clean
 
 cd $current_dir
-cp ./lib/DPS/$archive_name ./.temp
+cp ./lib/DPS/$archive_name $work_dir
 cp -r ./lib/DPS/dps_slave.h ./lib/DPS/common ./keyword.txt ./library.properties $work_dir
 
 cd $work_dir/cortex-m4/fpv4-sp-d16-hard
@@ -26,6 +26,6 @@ echo $(pwd)
 ln -s ../../$archive_name $archive_name
 
 cd $current_dir
-zip -r dps_slave.zip ./.temp/*
+zip -r dps_slave.zip $work_dir
 
-rm -r ./.temp
+rm -r $work_dir
